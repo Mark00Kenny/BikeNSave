@@ -2,19 +2,36 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
+<!-- https://www.youtube.com/watch?v=fGcMLu1GJEc&t=120s
+        Shows you how to build a nav bar-->
+    <!--Setting all the icons for navigation between fragments an activities-->
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_baseline_directions_bike_24"
+            android:title="Bike Stations" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_account"
+            android:title="Login" />
+
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_recommendations"
+            android:icon="@drawable/ic_account"
+            android:title="Recommendations" />
+
     </group>
+
+    <!-- Splitting the group in half to denote activities-->
+    <item android:title="Contact Us">
+        <menu>
+            <item android:id="@+id/recommedations"
+                  android:icon="@drawable/ic_contact"
+                  android:title="Contact Us"/>
+            <item android:id="@+id/tips"
+                android:icon="@drawable/ic_contact"
+                android:title="Safety Tips"/>
+        </menu>
+    </item>
 </menu>
