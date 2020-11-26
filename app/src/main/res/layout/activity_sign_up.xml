@@ -4,40 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7001022"
+    tools:context=".SignUp"
     android:orientation="vertical"
+    android:background="#F7001022"
     android:outlineProvider="paddedBounds"
-    android:padding="20dp"
-    tools:context=".LoginBikeNSave">
+    android:padding="20dp">
 
-    <!-- Adding my ImageView -->
+    <!--Setting up the top layer view before user details -->
     <ImageView
-        android:id="@+id/login_imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:src="@drawable/bikensave"
         android:outlineProvider="paddedBounds"
-        android:src="@drawable/bikensave">
+        />
 
-    </ImageView>
-
-    <!--Adding my welcoming text-->
     <TextView
-        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="40sp"
         android:fontFamily="sans-serif-black"
-        android:text="Welcome Back Biker!"
         android:textColor="#B8B8B1"
-        android:textSize="35sp">
 
-    </TextView>
+        />
 
     <TextView
         android:id="@+id/login_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Please Login Or Create an Account"
+        android:text="Please enter your sign up details"
         android:textColor="#CFC5C5"
         android:textSize="18sp">
 
@@ -47,7 +43,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="422dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:background="#FFFBFB"
@@ -57,24 +53,63 @@
 
         <!-- Using Google materials for these editable text fields-->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username"
+            android:id="@+id/user_fullName"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username">
+            android:hint="Full Name">
 
 
             <com.google.android.material.textfield.TextInputEditText
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scrollbarSize="3dp">
+                android:inputType="text"
+                android:scrollbarSize="3dp" />
 
 
-            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:counterMaxLength="15">
+            <!--Limiting username characters-->
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:scrollbarSize="3dp" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
+            android:id="@+id/user_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:scrollbarSize="3dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,50 +120,29 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword">
+                android:inputType="textPassword"
+                android:scrollbarSize="3dp" />
 
 
-            </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Setting a button for forgetting password-->
         <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_margin="5dp"
-            android:background="#00000000"
-            android:elevation="0dp"
-            android:outlineProvider="paddedBounds"
-            android:text="Forgot Password?"></Button>
-
-        <!--Sign In Button So users can Sign In-->
-        <Button
-            android:id="@+id/login_user"
+            android:id="@+id/create_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
             android:background="#3F51B5"
-            android:outlineProvider="background"
-            android:text="Sign In"
-            android:textColor="#fff">
-
-        </Button>
+            android:text="Sign UP"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/sign_up"
-            android:layout_width="200dp"
+            android:id="@+id/backToSign"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="5dp"
-            android:background="#00000000"
-            android:elevation="0dp"
-            android:outlineProvider="paddedBounds"
-            android:text="Create Account">
-
-        </Button>
-
+            android:background="#000000"
+            android:text="Already a member? Sign In"
+            android:textColor="#fff" />
 
     </LinearLayout>
 </LinearLayout>

@@ -1,5 +1,5 @@
 package com.example.bikensave;
-
+// https://www.youtube.com/watch?v=JLIFqqnSNmg&t=148s      (Coding with Tea Splashscreen)
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;

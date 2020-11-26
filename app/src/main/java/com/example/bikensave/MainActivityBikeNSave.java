@@ -1,4 +1,4 @@
-//Using the Android Studio Template for a Navigation Pane. Adjusting the design for my own project
+//Used a tutorial to help build my navbar. Adjusting the design for my own project
 // Changing Variable names for my use.
 
 package com.example.bikensave;
@@ -6,25 +6,10 @@ package com.example.bikensave;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.Menu;
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.core.view.GravityCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -33,7 +18,7 @@ import static com.example.bikensave.R.id.fragment_container;
 
 /* Main Class for the FYP Project. After a splashscreen loads, this will be the first screen
    The bikegps co-ordinates will load and fragments will be placed in the nav bar for easy access to
-   on their screens. */
+   on their screens. Due to the fragment handler I can Include the maps in a fragment */
 public class MainActivityBikeNSave extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     /*Creating a Nav Bar for bikensave*/
@@ -87,9 +72,6 @@ public class MainActivityBikeNSave extends AppCompatActivity implements Navigati
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ProfileFragment()).commit();
                 break;
-
-
-
 
         }
 

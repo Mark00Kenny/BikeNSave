@@ -1,9 +1,12 @@
-These are the sources that I have used for my code.
+These are the sources that I have used for my code and learning.
 
 
 Coding videos
-https://www.youtube.com/watch?v=JLIFqqnSNmg&t=148s     (Coding with Tea Splashscreen)
-                                                        (Coding with Tea Login)
+https://www.youtube.com/watch?v=JLIFqqnSNmg&t=148s      (Coding with Tea Splashscreen)
+https://www.youtube.com/watch?v=C_TEugAIMHA             (Coding with Tea Login)
+https://www.youtube.com/watch?v=aU8dWySoMOU             (Coding with Tea Sign up Screen)
+https://www.youtube.com/watch?v=wa8OrQ_e76M             (Coding with Tea Using Firebase with Sign Up)
+https://www.youtube.com/watch?v=9QOg8R8ol1w             (Coding with Tea Creating a profile)
 https://www.youtube.com/watch?v=fGcMLu1GJEc&t=120s      (Youtube Nav Bar Video)
 
 Coding Course
@@ -11,11 +14,10 @@ https://www.udemy.com/course/android-development-java-android-studio-masterclass
 (The Comprehensive 2020 Android Development Masterclass)
 
 
-Coding Websites
-
-
 IDE generated Code
 Android Studio has a strong code base which I used for generating some design based structures.
+EG: Maps fragment with Google Maps API
 
 APIs
 Google Maps API
+Google PLaces API
