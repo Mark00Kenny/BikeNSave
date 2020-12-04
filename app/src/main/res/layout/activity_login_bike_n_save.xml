@@ -104,7 +104,7 @@
 
         <!--Sign In Button So users can Sign In-->
         <Button
-            android:id="@+id/login_user"
+            android:onClick="login_User"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"

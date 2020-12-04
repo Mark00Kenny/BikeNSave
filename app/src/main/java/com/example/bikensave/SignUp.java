@@ -143,6 +143,9 @@ public class SignUp extends AppCompatActivity {
 
         //Saving to Firebase and setting the Unique ID to Username.
         reference.child(username).setValue(setUsers);
+
+        Intent intent = new Intent(getApplicationContext(), LoginBikeNSave.class);
+        startActivity(intent);
     }  // End of method for creating a new user.
 
 
