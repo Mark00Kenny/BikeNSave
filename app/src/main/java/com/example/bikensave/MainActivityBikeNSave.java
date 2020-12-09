@@ -72,6 +72,11 @@ public class MainActivityBikeNSave extends AppCompatActivity implements Navigati
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ProfileFragment()).commit();
                 break;
+            case R.id.nav_chat:
+                // New activity to be started.
+                Intent Screen= new Intent(MainActivityBikeNSave.this,Chatroom2.class);
+                startActivity(Screen);
+                break;
 
         }
 

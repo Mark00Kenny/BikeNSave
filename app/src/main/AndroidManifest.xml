@@ -21,6 +21,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".UserProfile"></activity>
+        <activity android:name=".Chatroom"></activity>
+        <activity android:name=".Chatroom2"></activity>
         <activity android:name=".SignUp" />
 
 

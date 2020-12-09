@@ -129,8 +129,10 @@ public class LoginBikeNSave extends AppCompatActivity {
                         password.requestFocus();
 
                     }
-                } else {userName.setError("Username does not exist");
-                userName.requestFocus();}
+                } else {
+                    userName.setError("Username does not exist");
+                    userName.requestFocus();
+                }
             }
 
             @Override

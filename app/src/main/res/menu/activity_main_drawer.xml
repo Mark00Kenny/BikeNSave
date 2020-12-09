@@ -21,6 +21,11 @@
             android:icon="@drawable/ic_account"
             android:title="Recommendations" />
 
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_account"
+            android:title="Chatroom" />
+
     </group>
 
     <!-- Splitting the group in half to denote activities-->
