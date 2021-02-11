@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "716512872723",
+    "firebase_url": "https://bikensave-b3242.firebaseio.com",
+    "project_id": "bikensave-b3242",
+    "storage_bucket": "bikensave-b3242.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716512872723:android:bd0a43a7f1a5106501f2e6",
+        "android_client_info": {
+          "package_name": "com.example.bikensave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716512872723-gtken4ngt7clgu02v5fe9ucgk4j980mi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bikensave",
+            "certificate_hash": "da4847e28e4280d2ce1902df4eb52b0eca68394c"
+          }
+        },
+        {
+          "client_id": "716512872723-7sf127ika3cjcm716i4p55tag52bug2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHYvGIKlnv_ufobfrDw5upt7cA3EZURYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716512872723-7sf127ika3cjcm716i4p55tag52bug2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

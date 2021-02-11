@@ -36,6 +36,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.4'
     implementation 'com.google.firebase:firebase-auth:16.0.5'
     implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -43,6 +45,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     // Bottom will allow maps to load current usr location
     implementation 'com.karumi:dexter:6.2.2'
+
+    //Picaso
+    implementation 'com.squareup.picasso:picasso:2.4.0'
 
 }
 

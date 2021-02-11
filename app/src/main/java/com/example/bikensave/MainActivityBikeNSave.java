@@ -77,6 +77,11 @@ public class MainActivityBikeNSave extends AppCompatActivity implements Navigati
                 Intent Screen= new Intent(MainActivityBikeNSave.this,Chatroom2.class);
                 startActivity(Screen);
                 break;
+            case R.id.nav_review:
+                // New activity to be started.
+                Intent Reviews= new Intent(MainActivityBikeNSave.this,MainActivity.class);
+                startActivity(Reviews);
+                break;
 
         }
 
