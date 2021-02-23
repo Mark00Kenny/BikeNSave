@@ -24,7 +24,7 @@
         <ImageView
             android:id="@+id/image_view_upload"
             android:layout_width="match_parent"
-            android:layout_height="250dp" />
+            android:layout_height="400dp" />
 
         <!--Divider-->
         <View
@@ -37,7 +37,7 @@
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toTopOf="@+id/post_detail_comment"
+            app:layout_constraintBottom_toTopOf="@+id/viewComments"
             app:layout_constraintTop_toTopOf="@+id/post_detail_title">
 
             <ImageView
@@ -70,56 +70,65 @@
                 android:layout_gravity="center"
                 android:hint="Dislikes"
                 android:textSize="20sp" />
+
+
+
         </LinearLayout>
-
-        <!-- End of My like buttons-->
-
         <!--Divider-->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/darker_gray"/>
 
-        <!--Start of Commenting-->
-
-        <ImageView
-            android:id="@+id/post_detail_currentuser_img"
-            android:layout_width="60dp"
-            android:layout_height="47dp"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="413dp"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <EditText
-
-            android:id="@+id/post_detail_comment"
+        <TextView
+            android:id="@+id/text_view_rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:ems="10"
-            android:hint="Write Comment"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="@+id/post_detail_currentuser_img"
-            app:layout_constraintStart_toEndOf="@+id/post_detail_currentuser_img"
-            app:layout_constraintTop_toTopOf="@+id/post_detail_currentuser_img" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="rating"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
 
-        <Button
-            android:id="@+id/post_detail_add_comment_btn"
-            android:layout_width="63dp"
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:text="Add"
-            app:layout_constraintBottom_toBottomOf="@+id/post_detail_comment"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/post_detail_comment"
-            app:layout_constraintTop_toTopOf="@+id/post_detail_comment"
-            app:layout_constraintVertical_bias="0.529" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Date"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/text_view_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Description"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+
+        <!-- End of My like buttons-->
+
+
+
+        <!--Start of Commenting-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_comment"
@@ -128,7 +137,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/post_detail_comment" />
+            app:layout_constraintTop_toBottomOf="@+id/viewComments" />
 
 
     </LinearLayout>

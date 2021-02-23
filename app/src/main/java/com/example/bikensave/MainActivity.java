@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private StorageTask mUploadTask;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //All my variables which I need to declare
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imagesviewer);
         mButtonChooseImage = findViewById(R.id.button_choose_image);

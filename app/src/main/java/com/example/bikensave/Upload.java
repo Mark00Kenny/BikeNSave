@@ -1,17 +1,21 @@
 package com.example.bikensave;
-
+//This is my class which acts as a helper class for uploading details to the database.
 public class Upload {
-    private String mName;
-    private String mImageUrl;
+    private String mName, mImageUrl, mDate, mRating, mReview;
+
+    //Empty Constructor for Firebase
     public Upload() {
-        //empty constructor needed
     }
-    public Upload(String name, String imageUrl) {
-        if (name.trim().equals("")) {
-            name = "No Name";
-        }
-        mName = name;
-        mImageUrl = imageUrl;
+
+
+    public Upload(String name, String imageUrl, String date, String rating, String review) {
+        this.mName= name;
+        this.mImageUrl= imageUrl;
+        this.mDate= date;
+        this.mRating= rating;
+        this.mReview= review;
+
+
     }
     public String getName() {
         return mName;
@@ -19,6 +23,29 @@ public class Upload {
     public void setName(String name) {
         mName = name;
     }
+
+    public String getDate() {
+        return mDate;
+    }
+    public void setDate(String date) {
+        mDate = date;
+    }
+
+    public String getRating() {
+        return mRating;
+    }
+    public void setRating(String rating) {
+        mRating = rating;
+    }
+
+    public String getReview() {
+        return mReview;
+    }
+    public void setReview(String review) {
+        mReview = review;
+    }
+
+
     public String getImageUrl() {
         return mImageUrl;
     }

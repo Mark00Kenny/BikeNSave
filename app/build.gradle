@@ -45,7 +45,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     // Bottom will allow maps to load current usr location
     implementation 'com.karumi:dexter:6.2.2'
-
+    //Profile CircleView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
     //Picaso
     implementation 'com.squareup.picasso:picasso:2.4.0'
 

@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import com.example.bikensave.R;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,6 +25,7 @@ public class LoginBikeNSave extends AppCompatActivity {
     TextInputLayout password;
     TextInputLayout userName;
 
+
     @Override //Code to facilitate moving to User creation
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,8 @@ public class LoginBikeNSave extends AppCompatActivity {
 
         userName = findViewById(R.id.username);
         password = findViewById(R.id.password);
+
+
 
         //Calling the sign up for unregistered users.
         callSignUp = findViewById(R.id.sign_up);
@@ -133,6 +137,7 @@ public class LoginBikeNSave extends AppCompatActivity {
                     userName.setError("Username does not exist");
                     userName.requestFocus();
                 }
+
             }
 
             @Override

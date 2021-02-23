@@ -119,7 +119,7 @@ public class Chatroom2 extends AppCompatActivity {
     }
 
     // This line is commented out. Allows for creation of more chat rooms but
-    // I do not want users to have this capability.
+    // I do not want users to have this capability only if I want to add more.
     /*
     public void create_chatroom(View v) {
         HashMap<String, Object> hashMap = new HashMap<>();

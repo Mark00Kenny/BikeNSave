@@ -51,7 +51,7 @@
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintBottom_toTopOf="@+id/post_detail_comment"
+            app:layout_constraintBottom_toTopOf="@+id/viewComments"
             app:layout_constraintTop_toTopOf="@+id/post_detail_title">
 
             <ImageView
@@ -115,7 +115,7 @@
         <EditText
 
             android:hint="Write Comment"
-            android:id="@+id/post_detail_comment"
+            android:id="@+id/viewComments"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -135,11 +135,11 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:text="Add"
-            app:layout_constraintBottom_toBottomOf="@+id/post_detail_comment"
+            app:layout_constraintBottom_toBottomOf="@+id/viewComments"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/post_detail_comment"
-            app:layout_constraintTop_toTopOf="@+id/post_detail_comment"
+            app:layout_constraintStart_toEndOf="@+id/viewComments"
+            app:layout_constraintTop_toTopOf="@+id/viewComments"
             app:layout_constraintVertical_bias="0.529" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -149,7 +149,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/post_detail_comment" />
+            app:layout_constraintTop_toBottomOf="@+id/viewComments" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
