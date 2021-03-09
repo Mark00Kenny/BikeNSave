@@ -16,32 +16,33 @@
             android:icon="@drawable/ic_account"
             android:title="Login" />
 
-        <item
-            android:id="@+id/nav_recommendations"
-            android:icon="@drawable/ic_account"
-            android:title="Recommendations" />
 
         <item
             android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_account"
+            android:icon="@drawable/ic_baseline_chat"
             android:title="Chatroom" />
 
         <item
             android:id="@+id/nav_review"
-            android:icon="@drawable/ic_account"
+            android:icon="@drawable/ic_baseline_photo_camera_24"
             android:title="Location Reviews" />
 
     </group>
 
     <!-- Splitting the group in half to denote activities-->
-    <item android:title="Contact Us">
+    <item android:title="Information Pages">
         <menu>
+            <item
+                android:id="@+id/nav_recommendations"
+                android:icon="@drawable/ic_baseline_shopping_cart_24"
+                android:title="Product Recommendations" />
+            <item android:id="@+id/tips"
+                android:icon="@drawable/ic_baseline_privacy_tip_24"
+                android:title="Safety Tips"/>
             <item android:id="@+id/recommedations"
                   android:icon="@drawable/ic_contact"
                   android:title="Contact Us"/>
-            <item android:id="@+id/tips"
-                android:icon="@drawable/ic_contact"
-                android:title="Safety Tips"/>
+
         </menu>
     </item>
 </menu>

@@ -14,8 +14,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import static com.example.bikensave.R.id.fragment_container;
-
 /* Main Class for the FYP Project. After a splashscreen loads, this will be the first screen
    The bikegps co-ordinates will load and fragments will be placed in the nav bar for easy access to
    on their screens. Due to the fragment handler I can Include the maps in a fragment */
@@ -70,8 +68,15 @@ public class MainActivityBikeNSave extends AppCompatActivity implements Navigati
                 break;
             case R.id.nav_recommendations:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ProfileFragment()).commit();
+                        new SafetyFragment()).commit();
                 break;
+
+            case R.id.tips:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ProductFragment()).commit();
+                break;
+
+
             case R.id.nav_chat:
                 // New activity to be started.
                 Intent Screen= new Intent(MainActivityBikeNSave.this,Chatroom2.class);
