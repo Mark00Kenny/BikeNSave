@@ -19,12 +19,12 @@ public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
     public CustomInfoWindowAdapter(MapsFragment context){
         this.context = context;
     }
-
+    //Get The marker windows
     @Override
     public View getInfoWindow(Marker marker) {
         return null;
     }
-
+    //Setting the information for the markers and inflating the layout.
     @Override
     public View getInfoContents(Marker marker) {
         View view = context.getLayoutInflater().inflate(R.layout.custom_info_window, null);

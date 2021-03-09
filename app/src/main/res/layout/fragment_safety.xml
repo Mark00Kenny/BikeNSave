@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/infodrop">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_marginLeft="35dp"
+            android:background="#FFF"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:transitionName="photoToAnimate"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/bikelocking" />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Tips For Locking Your Bike"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/photo" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:text="Finding somewhere to park your bike can be difficult at the best of times, but it’s vital to find the right location.\n \nIf a purpose built secure cycle parking facility is not an available option, then the second option is to look for a set of public  bike stands in a busy, well-lit area."
+                android:gravity="left"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_name"
+                android:id="@+id/textlock1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:gravity="left"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/textlock2"
+                app:layout_constraintTop_toBottomOf="@id/textlock1"
+                android:text="Ideally the location should be covered by CCTV and with no signs of bike theft,such as lonely half remains of locked wheels/bikes or cut locks on the floor. The stand should allow you to comfortably lock the bike with correct technique to the stand."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:gravity="left"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/textlock3"
+                app:layout_constraintTop_toBottomOf="@id/textlock2"
+                android:text="Avoid locking your bike to railings or any other objects. Not only could it be illegal and
+                 your bike might be removed by the facility or authority, but the object might have the ability to be broken,
+                 cut or unlocked by the thief. For example, you may have seen bikes locked to pavement sign poles, but these
+                 are known as ‘sucker poles’ for a reason – the sign can be easily removed and the bike lifted over the top of the pole."/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
