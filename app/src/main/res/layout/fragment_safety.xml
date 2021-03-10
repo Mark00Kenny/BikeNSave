@@ -77,11 +77,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:id="@+id/textlock3"
                 app:layout_constraintTop_toBottomOf="@id/textlock2"
-                android:text="Avoid locking your bike to railings or any other objects. Not only could it be illegal and
-                 your bike might be removed by the facility or authority, but the object might have the ability to be broken,
-                 cut or unlocked by the thief. For example, you may have seen bikes locked to pavement sign poles, but these
-                 are known as ‘sucker poles’ for a reason – the sign can be easily removed and the bike lifted over the top of the pole."/>
+                android:text="Avoid locking your bike to railings or any other objects. Not only could it be illegal and your bike might be removed by the facility or authority, but the object might have the ability to be broken, cut or unlocked by the thief. For example, you may have seen bikes locked to pavement sign poles, but these are known as ‘sucker poles’ for a reason – the sign can be easily removed and the bike lifted over the top of the pole."/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:gravity="left"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/textlock4"
+                app:layout_constraintTop_toBottomOf="@id/textlock3"
+                android:autoLink="all"
+                android:text="@string/YoutubeLock"
+                android:paddingBottom="20dp"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

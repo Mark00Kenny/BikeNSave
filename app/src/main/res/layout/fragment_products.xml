@@ -9,20 +9,21 @@ https://www.youtube.com/watch?v=VUPM387qyrw
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     >
 
 
 
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/infodrop"
-        android:weightSum="10"
+        android:background="@drawable/infodrop1"
+        android:weightSum="13"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!-- Opening -->
         <RelativeLayout
-            android:layout_weight="0.6"
+            android:layout_weight="0.4"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="@drawable/border"
@@ -52,6 +53,8 @@ https://www.youtube.com/watch?v=VUPM387qyrw
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:padding="14dp"
+
+
             >
 
             <!-- Row 1 -->
@@ -128,17 +131,18 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                         android:text="•Smarthalo is the number one companion for your bike. Smarthalo offers a GPS route planner to help plan all your trips.\n\n•Acting as a bike alarm SmartHalo provides a detterant to all criminals by emitting a 100 decibel alarm if someone meddles with your bike while you are not in the vicinity of its bluetooth field.\n\n•RRP €150"
                         android:textAlignment="gravity"
                         android:textColor="@android:color/black"
-                        android:textSize="11sp" />
+                        android:textSize="12sp" />
                     <!-- Clickable Link to website-->
                     <TextView
+                        android:paddingTop="20dp"
                         android:layout_width="140dp"
-                        android:layout_height="50dp"
+                        android:layout_height="40dp"
                         android:text="@string/smarthalo"
                         android:textAlignment="center"
                         android:id="@+id/smarthalowebsite"
                         android:autoLink="all"
                         android:textColor="@android:color/black"
-                        android:textSize="10sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -217,20 +221,21 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                         android:layout_width="match_parent"
                         android:layout_height="240dp"
                         android:paddingTop="10dp"
-                        android:text="•Kryptonite are regarded as the best manufacturer of bike locks worldwide. Their U lock bike is near impossible to pick and needs an electric saw to cut through.\n\n•If your bike is stolen while a Kryptonite lock is registered to your account, the company will cover the cost of your bike within the first 24 months.\n\n•RRP €100"
+                        android:text="•Kryptonite are regarded as the best manufacturer of bike locks worldwide. Their U lock bike is near impossible to pick and needs an electric saw to cut through.\n\n•If your bike is stolen while a Kryptonite lock is registered to your account, the company will cover the cost of your bike!\n\n•RRP €100"
                         android:textAlignment="gravity"
                         android:textColor="@android:color/black"
-                        android:textSize="11sp" />
+                        android:textSize="12sp" />
                     <!-- Clickable Link to website-->
                     <TextView
+                        android:paddingTop="20dp"
                         android:layout_width="140dp"
-                        android:layout_height="50dp"
+                        android:layout_height="40dp"
                         android:text="@string/kryptonite"
                         android:textAlignment="center"
                         android:id="@+id/kryptonitewebsite"
                         android:autoLink="all"
                         android:textColor="@android:color/black"
-                        android:textSize="10sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -314,22 +319,26 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                         android:text="•The Energiser multi-purpose torch is my personal pick for a front facing bike light. The torch itself has 3 modes including low light, high beam and flash.\n\n•The torch is incredibly powerful and is run by AA batteries which prevents the need to constantly charge your light before a journey.\n\n•RRP €20"
                         android:textAlignment="gravity"
                         android:textColor="@android:color/black"
-                        android:textSize="11sp" />
+                        android:textSize="12sp" />
                     <!-- Clickable Link to website-->
                     <TextView
+                        android:paddingTop="20dp"
                         android:layout_width="140dp"
-                        android:layout_height="50dp"
+                        android:layout_height="40dp"
                         android:text="@string/energiserweb"
                         android:textAlignment="center"
                         android:autoLink="all"
                         android:textColor="@android:color/black"
-                        android:textSize="10sp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
+            <!-- Row 2 Lumos Bike Helmet -->
+
+            <!-- Column 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -337,7 +346,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="-30dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 >
@@ -350,29 +359,77 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:background="@drawable/energiserlight"
+                        android:background="@drawable/helmet"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1.19"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <!-- Product Title-->
                     <TextView
-                        android:text="Calendars"
+                        android:layout_width="140dp"
+                        android:layout_height="22dp"
+                        android:text="Lumos Helmet"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Informatiion on Product-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:paddingTop="10dp"
+                        android:text="•Featuring integrated brake and turn signal lights, the Lumos Matrix keeps you visible and safe on the road.\n\n•Regarded as one of the best bicycle helmets on the market, this piece of equipment is controlled via a wireless remote and comes with a LED display on the back.\n\n•RRP €140"
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <!-- Clickable Link to website-->
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:text="@string/lumosweb"
+                        android:textAlignment="center"
+                        android:autoLink="all"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
+            <!-- Row 2 Lumos Bike Jacket -->
 
-
-
-
+            <!-- Column 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -380,7 +437,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="-30dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 >
@@ -393,28 +450,24 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:background="@drawable/hivis"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="Calendars"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
 
+
+
             </androidx.cardview.widget.CardView>
 
+            <!-- Column 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_rowWeight="1.19"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -422,11 +475,147 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 app:cardCornerRadius="8dp"
                 >
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <!-- Product Title-->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="22dp"
+                        android:text="Adaptable Jacket"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Informatiion on Product-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:paddingTop="10dp"
+                        android:text="•Windproof, water-resistant, and extremely breathable, this garment is perfect for chilly days but transforms into a jersey as the day warms up thanks to its removable sleeves.. \n\n• Gore’s Active Fit offers an exceptional level of comfort and freedom of movement, while reflective details keep you visible on the road.\n\n•RRP €120"
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <!-- Clickable Link to website-->
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:text="@string/jacket"
+                        android:textAlignment="center"
+                        android:autoLink="all"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <!-- Row 2 Backpack -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="-30dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:background="@drawable/backback"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1.19"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <!-- Product Title-->
+                    <TextView
+                        android:paddingTop="20dp"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:text="Backpack"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Informatiion on Product-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:paddingTop="10dp"
+                        android:text="•Constructed from 600D PVC, this modern roll top can withstand even the harshest weather conditions, keeping your belongings safe and dry.\n\n•There’s room for a laptop up to 15″, as well as multiple front pockets perfect for storing smaller, quick-access items. \n\n•RRP €170"
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                    <!-- Clickable Link to website-->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:text="@string/backpweb"
+                        android:textAlignment="center"
+                        android:autoLink="all"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
 
         </GridLayout>
 
     </LinearLayout>
+
+
+
 
 </ScrollView>

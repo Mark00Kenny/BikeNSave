@@ -17,8 +17,12 @@
 
     <!--Strings to load the links for the product pages-->
     <string name="smarthalo">Buy at <a href="https://www.smarthalo.bike/">Smarthalo.com</a></string>
-    <string name="kryptonite">Buy at <a href="https://www.kryptonitelock.com/en/home.html">kryptonitelock.com</a></string>
+    <string name="kryptonite">Buy at <a href="https://bit.ly/30wNduA">https://bit.ly/30wNduA</a></string>
     <string name="energiserweb">Buy at <a href="https://rhinodist.com/product/energiser-1300lu-led-torch/">rhinodist.com</a></string>
+    <string name="lumosweb">Buy at <a href="https://amzn.to/3chwH7o">https://amzn.to/3chwH7o</a></string>
+    <string name="jacket">Buy at <a href="https://bit.ly/3t4pCxG">https://bit.ly/3t4pCxG</a></string>
+    <string name="backpweb">Buy at <a href="https://bit.ly/3bDJIcp">https://bit.ly/3bDJIcp</a></string>
+    <string name="YoutubeLock">For more information on bike locking practices watch this short Youtube Video! <a href="https://bit.ly/3l1Xmch">https://bit.ly/3l1Xmch</a></string>
 
 
 </resources>
