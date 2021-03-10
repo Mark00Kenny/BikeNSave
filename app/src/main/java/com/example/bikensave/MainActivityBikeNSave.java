@@ -68,12 +68,12 @@ public class MainActivityBikeNSave extends AppCompatActivity implements Navigati
                 break;
             case R.id.nav_recommendations:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new SafetyFragment()).commit();
+                        new ProductFragment()).commit();
                 break;
 
             case R.id.tips:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ProductFragment()).commit();
+                        new SafetyFragment()).commit();
                 break;
 
 

@@ -15,4 +15,10 @@
     <!-- Strings used for fragments for navigation -->
 
 
+    <!--Strings to load the links for the product pages-->
+    <string name="smarthalo">Buy at <a href="https://www.smarthalo.bike/">Smarthalo.com</a></string>
+    <string name="kryptonite">Buy at <a href="https://www.kryptonitelock.com/en/home.html">kryptonitelock.com</a></string>
+    <string name="energiserweb">Buy at <a href="https://rhinodist.com/product/energiser-1300lu-led-torch/">rhinodist.com</a></string>
+
+
 </resources>

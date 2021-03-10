@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
 
         <!-- Opening -->
         <RelativeLayout
-            android:layout_weight="0.8"
+            android:layout_weight="0.6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="@drawable/border"
@@ -34,14 +34,13 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:gravity="center"
-                android:text="Bike Product Recommendations"
+                android:text="Best Bike Products"
                 android:textColor="#000000"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
         <!-- End of Title -->
-
         <!-- Start of Grid for Layout-->
         <GridLayout
             android:id="@+id/mainGrid"
@@ -49,7 +48,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
             android:rowCount="3"
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
-            android:layout_weight="9"
+            android:layout_weight="10"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:padding="14dp"
@@ -58,6 +57,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
             <!-- Row 1 -->
 
             <!-- Column 1 -->
+
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -83,16 +83,10 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="Me"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
+
+
 
             </androidx.cardview.widget.CardView>
 
@@ -101,7 +95,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_rowWeight="1.19"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -110,33 +104,49 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 >
 
                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:orientation="vertical">
 
-                    <ImageView
-
-                        android:layout_gravity="center_horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
+                    <!-- Product Title-->
                     <TextView
-                        android:text="Family"
+                        android:layout_width="140dp"
+                        android:layout_height="20dp"
+                        android:text="Smart Halo"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:textStyle="bold" />
+
+                    <!-- Informatiion on Product-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:paddingTop="10dp"
+                        android:text="•Smarthalo is the number one companion for your bike. Smarthalo offers a GPS route planner to help plan all your trips.\n\n•Acting as a bike alarm SmartHalo provides a detterant to all criminals by emitting a 100 decibel alarm if someone meddles with your bike while you are not in the vicinity of its bluetooth field.\n\n•RRP €150"
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+                    <!-- Clickable Link to website-->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:text="@string/smarthalo"
+                        android:textAlignment="center"
+                        android:id="@+id/smarthalowebsite"
+                        android:autoLink="all"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
 
-            <!-- Row 2 -->
+            <!-- Row 2 Kryptonite Bike Lock -->
 
             <!-- Column 1 -->
             <androidx.cardview.widget.CardView
@@ -146,7 +156,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="-30dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 >
@@ -164,16 +174,10 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="Lovely"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
+
+
 
             </androidx.cardview.widget.CardView>
 
@@ -182,7 +186,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_rowWeight="1.19"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -191,25 +195,43 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 >
 
                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_gravity="center_horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
 
+                    <!-- Product Title-->
                     <TextView
-                        android:text="Team"
+                        android:layout_width="140dp"
+                        android:layout_height="22dp"
+                        android:text="Kryptonite"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:textStyle="bold" />
+
+                    <!-- Informatiion on Product-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:paddingTop="10dp"
+                        android:text="•Kryptonite are regarded as the best manufacturer of bike locks worldwide. Their U lock bike is near impossible to pick and needs an electric saw to cut through.\n\n•If your bike is stolen while a Kryptonite lock is registered to your account, the company will cover the cost of your bike within the first 24 months.\n\n•RRP €100"
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+                    <!-- Clickable Link to website-->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:text="@string/kryptonite"
+                        android:textAlignment="center"
+                        android:id="@+id/kryptonitewebsite"
+                        android:autoLink="all"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -217,6 +239,8 @@ https://www.youtube.com/watch?v=VUPM387qyrw
 
 
             <!-- Row 2 -->
+
+            <!-- Row 2 Energiser Light -->
 
             <!-- Column 1 -->
             <androidx.cardview.widget.CardView
@@ -226,7 +250,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 android:layout_rowWeight="1"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginRight="-30dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 >
@@ -239,21 +263,15 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:background="@drawable/border"
+                        android:background="@drawable/energiserlight"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
-                    <TextView
-                        android:text="Friends"
-                        android:textAlignment="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
+
+
 
             </androidx.cardview.widget.CardView>
 
@@ -262,7 +280,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
+                android:layout_rowWeight="1.19"
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -271,25 +289,42 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                 >
 
                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal|center_vertical"
                     android:layout_margin="16dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_gravity="center_horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
 
+                    <!-- Product Title-->
                     <TextView
-                        android:text="Calendars"
+                        android:layout_width="140dp"
+                        android:layout_height="22dp"
+                        android:text="Energiser Torch"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Informatiion on Product-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:paddingTop="10dp"
+                        android:text="•The Energiser multi-purpose torch is my personal pick for a front facing bike light. The torch itself has 3 modes including low light, high beam and flash.\n\n•The torch is incredibly powerful and is run by AA batteries which prevents the need to constantly charge your light before a journey.\n\n•RRP €20"
+                        android:textAlignment="gravity"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+                    <!-- Clickable Link to website-->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:text="@string/energiserweb"
+                        android:textAlignment="center"
+                        android:autoLink="all"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
@@ -325,6 +360,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
+                        android:gravity="center"
                         android:textStyle="bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
