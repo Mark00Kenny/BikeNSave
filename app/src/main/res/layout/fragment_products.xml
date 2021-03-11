@@ -93,7 +93,7 @@ https://www.youtube.com/watch?v=VUPM387qyrw
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Column 2 -->
+            <!-- Column 2   SmartHalo -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"

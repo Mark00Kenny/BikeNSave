@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/infodrop">
-
+    <!-- Enabling Scrolling -->
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -22,7 +22,7 @@
 
             <ImageView
                 android:id="@+id/photo"
-                android:layout_width="400dp"
+                android:layout_width="355dp"
                 android:layout_height="300dp"
                 android:scaleType="centerCrop"
                 android:transitionName="photoToAnimate"
@@ -43,6 +43,14 @@
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/photo" />
+            <View
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_height="1dp"
+                android:background="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/product_name"
+                tools:ignore="MissingConstraints" />
+
 
 
 
@@ -77,7 +85,46 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:id="@+id/textlock3"
                 app:layout_constraintTop_toBottomOf="@id/textlock2"
-                android:text="Avoid locking your bike to railings or any other objects. Not only could it be illegal and your bike might be removed by the facility or authority, but the object might have the ability to be broken, cut or unlocked by the thief. For example, you may have seen bikes locked to pavement sign poles, but these are known as ‘sucker poles’ for a reason – the sign can be easily removed and the bike lifted over the top of the pole."/>
+                android:paddingBottom="20dp"
+                android:text="Avoid locking your bike to railings or any other objects. It is harder to lock the frame of your bike and makes it much easier for a thief to steal. Never lock your bike by its wheel as this invites trouble."/>
+
+
+            <ImageView
+                android:id="@+id/photo1"
+                android:layout_width="340dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:transitionName="photoToAnimate"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textlock3"
+                android:background="@drawable/bikelock1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="left"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/textlock5"
+                app:layout_constraintTop_toBottomOf="@id/photo1"
+                android:text="In Summary..."
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:id="@+id/textlock4"
+                app:layout_constraintTop_toBottomOf="@id/textlock5"
+                android:background="@drawable/safetytips"
+                android:paddingBottom="20dp"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -86,11 +133,13 @@
                 android:textSize="20sp"
                 android:gravity="left"
                 app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/textlock4"
-                app:layout_constraintTop_toBottomOf="@id/textlock3"
+                android:id="@+id/textlock6"
+                app:layout_constraintTop_toBottomOf="@id/textlock4"
                 android:autoLink="all"
-                android:text="@string/YoutubeLock"
-                android:paddingBottom="20dp"/>
+                android:text="@string/YoutubeLock"/>
+            "/>
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
