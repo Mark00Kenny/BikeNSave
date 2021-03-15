@@ -33,10 +33,10 @@ public class MapsFragment extends Fragment {
         @Override
         public void onMapReady(GoogleMap googleMap) {
             //Adding zoom feauture in so map loads in cork also adding this marker as the legend for the map
-            LatLng Cork = new LatLng(51.898946, -8.476309);
+            LatLng Cork = new LatLng(51.898946, -8.472309);
             googleMap.addMarker(new MarkerOptions().position(Cork)
                     .title("Cork City Center Legend")
-                    .snippet("Bike Station = \uD83D\uDD34 \uD83D\uDD12\uD83D\uDEB2 \n \n Bike Rental = \uD83D\uDD35 \uD83D\uDCB0\uD83D\uDEB2 \n \n Bike Shop = \uD83D\uDED2 \uD83D\uDEB2 \uD83D\uDD27\uD83D\uDCB0 \n \n CCTV: Present = \uD83D\uDCF7 \n \n CCTV: Missing = \uD83D\uDEAB \n \n")
+                    .snippet("Bike Station = \uD83D\uDD34 \uD83D\uDD12\uD83D\uDEB2 \n \n Bike Rental = \uD83D\uDD35 \uD83D\uDCB0\uD83D\uDEB2 \n \n Bike Shop = \uD83D\uDED2 \uD83D\uDEB2 \uD83D\uDD27\uD83D\uDCB0 \n \n Garda Station = \uD83D\uDC6E \uD83D\uDD75 \uD83D\uDEB2 \n \n CCTV: Present = \uD83D\uDCF7 \n \n CCTV: Missing = \uD83D\uDEAB \n \n")
                     .icon(BitmapDescriptorFactory.fromResource(R.drawable.questionmark)));
 
             googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(Cork, 14));
@@ -78,10 +78,18 @@ public class MapsFragment extends Fragment {
 
 
             //Icons for all the rental areas for Coke Zero Bikes
-            LatLng CokeZero1 = new LatLng(51.89980089030018, -8.47854021934494);
+            LatLng CokeZero1 = new LatLng(51.896181810053456, -8.468107101545982);
             googleMap.addMarker(new MarkerOptions()
                     .position(CokeZero1)
-                    .title("Coke Zero Rental UCC \uD83D\uDCB0 \uD83D\uDEB2")
+                    .title("Coke Zero Rental \n \nCork School of Music\uD83D\uDCB0 \uD83D\uDEB2")
+                    .snippet("Security Rating ⭐⭐⭐⭐ (3)\n \n CCTV:\uD83D\uDCF7")
+                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+
+            //Icons for all the rental areas for Coke Zero Bikes
+            LatLng CokeZero2 = new LatLng(51.89980089030018, -8.47854021934494);
+            googleMap.addMarker(new MarkerOptions()
+                    .position(CokeZero2)
+                    .title("Coke Zero Rental UCC \uD83D\uDCB0 \uD83D\uDEB2 \n \n")
                     .snippet("Security Rating ⭐⭐⭐⭐⭐ (1)\n \n CCTV:\uD83D\uDCF7")
                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
 
@@ -106,6 +114,37 @@ public class MapsFragment extends Fragment {
                     .title("The Edge \uD83D\uDED2 \uD83D\uDEB2 \uD83D\uDD27")
                     .snippet("Opening Hours Monday-Friday 9am-5pm \n \n Description:Sale of Athletic Bikes, Bike Gear and athletic assortment")
                     .icon(BitmapDescriptorFactory.fromResource(R.drawable.theedge)));
+
+            //Icons for all the Garda Stations
+            LatLng Anglesea = new LatLng(51.89581881090926, -8.465243045729116);
+            googleMap.addMarker(new MarkerOptions()
+                    .position(Anglesea)
+                    .title("Anglesea Street Station \uD83D\uDC6E \uD83D\uDD75 \uD83D\uDEB2")
+                    .snippet("Contact Number: 0214522000 \n \n Description: Garda Station")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.gardasymbol)));
+
+            LatLng gurran = new LatLng(51.903557473097656, -8.496556888055572);
+            googleMap.addMarker(new MarkerOptions()
+                    .position(gurran)
+                    .title("Gurranabraher Station \uD83D\uDC6E \uD83D\uDD75 \uD83D\uDEB2")
+                    .snippet("Contact Number: 0214946200 \n \n Description: Garda Station")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.gardasymbol)));
+
+            LatLng btown = new LatLng(51.880821129636146, -8.514615301546575);
+            googleMap.addMarker(new MarkerOptions()
+                    .position(btown)
+                    .title("Bishopstown Station \uD83D\uDC6E \uD83D\uDD75 \uD83D\uDEB2")
+                    .snippet("Contact Number: 0214624500 \n \n Description: Garda Station")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.gardasymbol)));
+
+            LatLng togher = new LatLng(51.87654479186797, -8.486313988089151);
+            googleMap.addMarker(new MarkerOptions()
+                    .position(togher)
+                    .title("Togher Station \uD83D\uDC6E \uD83D\uDD75 \uD83D\uDEB2")
+                    .snippet("Contact Number: 0214947120 \n \n Description: Garda Station")
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.gardasymbol)));
+
+
 
             //Set Custom InfoWindow Adapter
             CustomInfoWindowAdapter adapter = new CustomInfoWindowAdapter(MapsFragment.this);

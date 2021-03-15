@@ -20,13 +20,15 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/editText2"
+        android:hint="Send a Message Here"
         android:layout_alignTop="@+id/button2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/button2"
-        android:layout_toStartOf="@+id/button2" />
+        android:layout_toStartOf="@+id/button2"
+        android:background="#ffffff"/>
 
     <ScrollView
         android:layout_width="wrap_content"

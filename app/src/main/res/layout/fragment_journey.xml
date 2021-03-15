@@ -54,6 +54,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/cycle_title"
                 tools:ignore="MissingConstraints" />
 
+            <!-- Standard Monthly Info on the bike Route-->
+
             <TextView
                 android:id="@+id/cycle_name"
                 android:layout_width="match_parent"
@@ -85,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Location: Cobh Area."
+                android:text="Location: Ringaskiddy Area."
                 android:textColor="#000389"
                 android:textSize="19sp"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -113,6 +115,57 @@
                 android:background="@android:color/black"
                 app:layout_constraintBottom_toBottomOf="@+id/bikeplanner"
                 tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/cycle_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Description."
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linebreak2" />
+            <!-- Standard Monthly Description-->
+            <TextView
+                android:id="@+id/cycle_description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Our pick for BikeNSaves's March Cycle of the month is the 6 mile road race of Ringaskiddy.\n\nIt's a very interesting route stretching a circular kilometre range of 9.56km and is sure to get people fit and active during the month of march.\n\nThe Road Race takes place every May around the Pfizer campus for charity so now is the perfect time to begin your preparations for May's race!\n\nEvery year over 1,000 athlete's compete by either cycling or running so it is a great way to get in touch with other fitness enthusiasts.\n"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:textSize="19sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cycle_description" />
+
+            <ImageView
+                android:id="@+id/photo2"
+                android:layout_width="355dp"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:transitionName="photoToAnimate"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cycle_description1"
+                android:background="@drawable/raceimage" />
+
+            <TextView
+                android:id="@+id/cycle_description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="For the month of April we are taking our communities suggestions for our first community chosen cycle path. Chat amongt yourselves in our chatpage or email us at: \n\nbikensave@gmail.com\n\n"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="19sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/photo2" />
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
