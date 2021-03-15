@@ -136,6 +136,7 @@
                 android:id="@+id/textlock6"
                 app:layout_constraintTop_toBottomOf="@id/textlock4"
                 android:autoLink="all"
+                android:paddingBottom="25dp"
                 android:text="@string/YoutubeLock"/>
             "/>
 
